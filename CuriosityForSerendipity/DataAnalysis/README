@@ -1,0 +1,15 @@
+README -- how to use files:
+
+1. Create CSV table to use later for analysis (in spss)
+- CombineTables+SpamFilter.sql creates new table 'bigtable' (select only the 'notspam=1' participants), all 9 rated recommendations (each participant 9 rows in table)
+- Userprofile.sql creates 'userprofile' table with copingpotential and demographics (each participant 1 row in table)
+- Watchingtime.sql creates 'watchingtime' table with user_id, time of watching (when) and amount of time watching (how mutch?)
+
+Run these files, and save/export as .csv file.
+
+2. Open csv files in SPSS, and run corresponding spss syntax file:
+- bigtable.csv --> syntax_conflictstudy_analysis.sps
+- userprofile.csv --> syntax_conflictstudy_copingonserendipity.sps
+- watchingtime.csv --> syntax_conflictstudy_watchingtime.sps
+
+
